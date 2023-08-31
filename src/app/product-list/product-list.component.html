@@ -12,14 +12,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(0)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(0)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[0]}}</p>
+                    </div>
 
                 </div>
 
@@ -33,14 +36,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(1)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(1)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[1]}}</p>
+                    </div>
                 </div>
             </div>
 
@@ -51,14 +57,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(2)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(2)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[2]}}</p>
+                    </div>
                 </div>
             </div>
 
@@ -69,14 +78,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(3)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(3)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[3]}}</p>
+                    </div>
                 </div>
             </div>
 
@@ -91,14 +103,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(4)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(4)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[4]}}</p>
+                    </div>
 
                 </div>
             </div>
@@ -110,14 +125,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(5)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(5)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[5]}}</p>
+                    </div>
 
                 </div>
             </div>
@@ -129,14 +147,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(6)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(6)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[6]}}</p>
+                    </div>
 
                 </div>
             </div>
@@ -148,14 +169,17 @@
                     <p>3 Pizzas Grandes en Americana o Pepperoni</p>
 
                     <div class="button_group">
-                        <button class="btn btn-plus" type="button" (click)="increase()"><img
+                        <button class="btn btn-plus" type="button" (click)="increase(7)"><img
                                 [src]="'assets/plus.png'"></button>
                         <button class="btn_pay">Comprar</button>
-                        <button class="btn btn-minus" type="button" (click)="decrease()"><img
+                        <button class="btn btn-minus" type="button" (click)="decrease(7)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
 
-                    <div class="price">S/.{{counter}}</div>
+                    <div class="price">
+                        <p>Cantidad: {{quantityBuy}}</p>
+                        <p>S/.{{counter[7]}}</p>
+                    </div>
 
                 </div>
             </div>
@@ -172,7 +196,7 @@
         </div>
 
         <div class="sale-footer">
-            <h3>Total a Pagar: S/.{{counter}}</h3>
+            <h3>Total a Pagar: S/.{{counter[0]}}</h3>
             <hr class="line">
             <button class="btn_pay btn-total">Pagar</button>
         </div>
