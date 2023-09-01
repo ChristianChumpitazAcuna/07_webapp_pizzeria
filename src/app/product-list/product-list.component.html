@@ -14,7 +14,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(0)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(0)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(0)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -38,7 +40,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(1)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(1)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(1)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -59,7 +63,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(2)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(2)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(2)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -80,7 +86,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(3)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(3)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(3)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -105,7 +113,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(4)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(4)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(4)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -127,7 +137,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(5)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(5)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(5)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -149,7 +161,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(6)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(6)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(6)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -171,7 +185,9 @@
                     <div class="button_group">
                         <button class="btn btn-plus" type="button" (click)="increase(7)"><img
                                 [src]="'assets/plus.png'"></button>
-                        <button class="btn_pay">Comprar</button>
+
+                        <button class="btn_pay" type="button" (click)="buyPizza(7)">Comprar</button>
+
                         <button class="btn btn-minus" type="button" (click)="decrease(7)"><img
                                 [src]="'assets/minus.png'"></button>
                     </div>
@@ -196,10 +212,24 @@
         </div>
 
         <div class="sale-footer">
-            <h3>Total a Pagar: S/.{{counter[0]}}</h3>
+
+            <p class="list-products" *ngFor="let product of purchasedProducts">
+                S/.{{ product.precio}}
+            </p>
+
+            <h3>Total a Pagar: S/.{{calculateTotal()}}</h3>
+
             <hr class="line">
-            <button class="btn_pay btn-total">Pagar</button>
+            <button class="btn_pay btn-total" (click)="openModal()">Pagar</button>
         </div>
+
+    </div>
+
+    <!--Modal Respuesta -->
+
+    <div id="modalConfirm" role="dialog" [hidden]="!modalVisible">
+        <h3>Compra Exitosa</h3>
+        <button class="btn_pay btn-total" (click)="closeModal()">Cerrar</button>
 
     </div>
 

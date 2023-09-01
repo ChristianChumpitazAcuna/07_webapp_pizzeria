@@ -1,6 +1,7 @@
-p{
+p {
     color: rgb(145, 145, 145);
 }
+
 .container-main {
     display: flex;
     flex-direction: column column;
@@ -61,7 +62,7 @@ p{
     background-color: rgba(165, 165, 165, 0.205);
 }
 
-.btn:active{
+.btn:active {
     transform: scale(0.9);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -80,8 +81,6 @@ p{
 .sale {
     position: fixed;
     right: 0;
-    display: grid;
-    align-content: space-around;
     background-color: rgb(255, 255, 255);
     width: 335px;
     height: 100vh;
@@ -93,9 +92,9 @@ p{
     display: grid;
 }
 
-.line{
-    border-top: 2px dashed  #ccc;
-    margin: 25px 0; 
+.line {
+    border-top: 2px dashed #ccc;
+    margin: 25px 0;
 }
 
 .btn-total {
@@ -103,3 +102,26 @@ p{
     height: 40px;
 }
 
+.list-products {
+    list-style: none;
+    color: rgb(87, 87, 87);
+    text-align: center;
+    font-size: 14px;
+}
+
+#modalConfirm {
+    position: fixed;
+    top: 30%;
+    /* Mover la mitad de la altura del elemento desde la parte superior */
+    left: 50%;
+    /* Mover la mitad del ancho del elemento desde la izquierda */
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    background-color:rgba(0, 0, 0, 0.623);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
